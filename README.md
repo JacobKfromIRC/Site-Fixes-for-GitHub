@@ -1,6 +1,8 @@
 # Haketilo-Fixes-for-GitHub
 This repository contains free software JavaScript to use GitHub, including registration.
 
+Warning: GitHub will be able to tell that you used these scripts and not the official ones!
+
 # Instructions
 
 To use this script from the dev console (no Haketilo needed, probably), go to github.com/signup, and copy/paste the code in github-signup.js in the console, and run it.
