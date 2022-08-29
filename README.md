@@ -30,3 +30,47 @@ run "submitForm();" and you should be taken to the launch code page, and you sho
 After entering the launch code, you can click "Skip Personalization" to get to your home page.
 
 You now have a GitHub account! Most functions work without JavaScript, but the profile dropdown is broken. To get to settings you can go to github.com/settings.
+
+# License
+
+This program is licensed as GPL version 3 or later, with 2 (optional) exceptions. See the following license header for details:
+
+```
+/**
+ * SPDX-License-Identifier: LicenseRef-GPL-3.0-or-later-WITH-js-exceptions
+ *
+ * Copyright (C) 2022 Wojtek Kosior
+ * Copyright (C) 2022 Jacob K
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute forms of that code without the copy of the GNU
+ * GPL normally required by section 4, provided you include this
+ * license notice and, in case of non-source distribution, a URL
+ * through which recipients can access the Corresponding Source.
+ * If you modify file(s) with this exception, you may extend this
+ * exception to your version of the file(s), but you are not
+ * obligated to do so. If you do not wish to do so, delete this
+ * exception statement from your version.
+ *
+ * As a special exception to the GPL, any HTML file which merely
+ * makes function calls to this code, and for that purpose
+ * includes it by reference shall be deemed a separate work for
+ * copyright law purposes. If you modify this code, you may extend
+ * this exception to your version of the code, but you are not
+ * obligated to do so. If you do not wish to do so, delete this
+ * exception statement from your version.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+```
