@@ -1,0 +1,66 @@
+// SPDX-License-Identifier: CC0-1.0
+
+// Copyright (C) 2022 Wojtek Kosior <koszko@koszko.org>
+// Copyright (C) 2022 Jacob K
+// Available under the terms of Creative Commons Zero v1.0 Universal.
+
+{
+    "$schema": "https://hydrilla.koszko.org/schemas/package_source-2.schema.json",
+    "source_name": "github-com-fix",
+    "copyright":  [
+	// The text of the LicenseRef- GPL also gets included in the report.
+	{"file": "report.spdx"},
+	{"file": "LICENSES/CC0-1.0.txt"}
+    ],
+    "additional_files": [
+	{"file": "LICENSES/LicenseRef-GPL-3.0-or-later-WITH-js-exceptions.txt"}
+    ],
+    "upstream_url": "https://github.com/JacobKfromIRC/Site-Fixes-for-GitHub",
+    "definitions": [{
+	"type":         "mapping_and_resource",
+	"identifier":   "github-com-fix-signup",
+	"long_name":    "Signup fix for GitHub",
+	"uuid":         "64eca0ab-91e3-4832-a1cb-1d86dc2df37a",
+	"version":      [2022, 8, 29],
+	"revision":     1,
+	"description":  "Enable signing up for GitHub without relying on site-served JavaScript.",
+	"dependencies": [],
+	"scripts":      [{"file": "github-signup.js"}],
+	"payloads": {
+	    "https://github.com/signup": {
+		"identifier": "github-com-fix-signup"
+	    }
+	}
+    }, {
+	"type":         "mapping_and_resource",
+	"identifier":   "octocaptcha-com-fix",
+	"long_name":    "Libre client for Octocaptcha",
+	"uuid":         "9f0e549f-f051-4733-9646-2e0bfc9b49aa",
+	"version":      [2022, 8, 29],
+	"revision":     1,
+	"description":  "Enable solving Octocaptcha CAPTCHAs without relying on site-served JavaScript.",
+	"dependencies": [],
+	"scripts":      [{"file": "octocaptcha-frame.js"}],
+	"payloads": {
+	    "https://octocaptcha.com/": {
+		"identifier": "octocaptcha-com-fix"
+	    }
+	}
+    }, {
+	"type":         "mapping_and_resource",
+	"identifier":   "api-funcaptcha-com-fix",
+	"long_name":    "Libre client for Funcaptcha API",
+	"uuid":         "6c519f23-4df1-4dd7-a84b-774d817dea56",
+	"version":      [2022, 8, 29],
+	"revision":     1,
+	"description":  "Enable solving Funcaptcha CAPTCHAs without relying on site-served JavaScript.",
+	"dependencies": [],
+	"scripts":      [{"file": "funcaptcha-init-frame.js"}],
+	"payloads": {
+	    "https://api.funcaptcha.com/fc/gc/": {
+		"identifier": "api-funcaptcha-com-fix"
+	    }
+	}
+    }],
+    "reuse_generate_spdx_report": true
+}
