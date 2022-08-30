@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-3.0-or-later
+/* SPDX-License-Identifier: LicenseRef-GPL-3.0-or-later-WITH-js-exceptions
  *
  * A Haketilo library which facilitates making HTTP AJAX requests that bypass
  * CORS rules.
