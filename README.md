@@ -1,4 +1,4 @@
-# Haketilo-Fixes-for-GitHub
+# Site-Fixes-for-GitHub
 This repository contains free software JavaScript to use GitHub, including registration.
 
 Warning: GitHub will be able to tell that you used these scripts and not the official ones!
