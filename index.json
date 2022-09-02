@@ -25,6 +25,7 @@
 	"revision":     1,
 	"description":  "Enable signing up for GitHub without relying on site-served JavaScript.",
 	"dependencies": [],
+	"required_mappings":    [{"identifier": "octocaptcha-com-fix"}],
 	"scripts":      [{"file": "github-signup.js"}],
 	"payloads": {
 	    "https://github.com/signup": {
@@ -40,6 +41,7 @@
 	"revision":     1,
 	"description":  "Enable solving Octocaptcha CAPTCHAs without relying on site-served JavaScript.",
 	"dependencies": [],
+	"required_mappings":    [{"identifier": "api-funcaptcha-com-fix"}],
 	"scripts":      [{"file": "octocaptcha-frame.js"}],
 	"payloads": {
 	    "https://octocaptcha.com/": {
