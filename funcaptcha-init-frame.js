@@ -181,4 +181,15 @@ function playAudio() {
 // actually run the script
 getCaptchaInfo();
 
+// add audio solution box so you don't have to manually run solveAudioCaptcha()
+let audioCaptchaSolveButton = document.createElement("button");
+audioCaptchaSolveButton.innerText = "Submit answer to audio CAPTCHA";
+audioCaptchaSolveButton.addEventListener("click", function(element){
+	solveAudioCaptcha(document.getElementById("audioTextInput").value);
+});
+document.body.prepend(audioCaptchaSolveButton);
+let audioTextInput = document.createElement("input");
+audioTextInput.id = "audioTextInput";
+document.body.prepend(audioTextInput);
+
 // Then run solveCaptcha() after you've run funcaptcha-game-frame
