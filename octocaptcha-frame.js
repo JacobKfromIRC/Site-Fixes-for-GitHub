@@ -121,8 +121,8 @@ function gt2() {
 		const tokenString = responseJson.token;
 		if (inIframe) {
 			window.parent.postMessage(`OctocaptchaTokenString: ${tokenString}`, "https://github.com")
-			console.log("Put this in octocaptcha-token: ", tokenString);
 		}
+		console.log("Put this in octocaptcha-token: ", tokenString);
 		insertIframe(tokenString);
 	});
 }
