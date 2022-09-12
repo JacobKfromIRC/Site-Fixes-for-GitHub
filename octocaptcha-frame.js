@@ -120,7 +120,7 @@ function gt2() {
 //		fcBootstrap(challengeUrlCdn);
 		const tokenString = responseJson.token;
 		if (inIframe) {
-			// TODO: send token up to parent document automatically
+			window.parent.postMessage(`OctocaptchaTokenString: ${tokenString}`, "https://github.com")
 			console.log("Put this in octocaptcha-token: ", tokenString);
 		}
 		insertIframe(tokenString);

@@ -164,6 +164,21 @@ function setOctocaptchaToken(tokenString) {
 	document.querySelector(".js-octocaptcha-token").value = tokenString;
 }
 
+// automatically set the token string
+// copied and modified from https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage (MIT license or public domain, not sure; see https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license for details)
+window.addEventListener("message", (event) => {
+  // Do we trust the sender of this message?
+  if (event.origin !== "https://octocaptcha.com") {
+  	console.error("Bad origin:", event.origin);
+    return;
+  }
+
+	if (event.data.split(": ")[0] == "OctocaptchaTokenString") {
+		setOctocaptchaToken(event.data.split(": ")[1]);
+	}
+
+}, false);
+
 function submitForm() {
 	document.querySelector("form").submit();
 }
