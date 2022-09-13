@@ -151,7 +151,8 @@ function insertIframe(tokenString) {
 	iframe.id = "fc-iframe-wrap";
 	iframe.className = "fc-iframe-wrap";
 	iframe.setAttribute("aria-label", " ");
-	iframe.style = "width: 100%; height: 380px;";
+	iframe.style = "width: 100%;"; /* used to also have  "height: 380px;", but
+		that made it where the iframe scrolls which was unnecessary. */
 	iframe.src = url;
 	iframe.setAttribute("frameborder", "0");
 	let nestedDiv = document.createElement("div");
