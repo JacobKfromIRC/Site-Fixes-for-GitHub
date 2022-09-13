@@ -179,9 +179,15 @@ window.addEventListener("message", (event) => {
 
 }, false);
 
+
 function submitForm() {
 	document.querySelector("form").submit();
 }
+
+// add button to submit the form
+let submissionButton = document.createElement("button");
+submissionButton.innerText = "Submit form";
+document.querySelector("div.signup-content-container").appendChild(submissionButton);
 
 /* This frame already exists; we don't need to create it.
 <iframe src="https://octocaptcha.com?origin_page=github_signup_next&amp;responsive=true&amp;require_ack=true&amp;version=2" class="js-octocaptcha-frame width-full d-block border-0 rounded-2" title="Please verify by completing this captcha." style="height: 380px; width: 556px;"></iframe>
