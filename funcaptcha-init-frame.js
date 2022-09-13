@@ -193,3 +193,11 @@ audioTextInput.id = "audioTextInput";
 document.body.prepend(audioTextInput);
 
 // Then run solveCaptcha() after you've run funcaptcha-game-frame
+
+
+
+
+
+// remove some (currently) useless elements
+document.querySelector("div.main-ctn").remove();
+document.querySelector("div.infoCtn").remove();
