@@ -201,5 +201,8 @@ document.getElementById("opt-in-container").removeAttribute("hidden");
 document.getElementById("captcha-and-submit-container").style.position = "revert";
 document.getElementById("captcha-and-submit-container").querySelector("iframe.js-octocaptcha-frame.width-full.d-block.v-hidden.border-0.rounded-2").style = "visibility: revert !important";
 
+// remove loading icon
+document.querySelector("div.js-octocaptcha-spinner").remove();
+
 
 // https://api.funcaptcha.com/fc/assets/tile-game-ui/13.29.0/standard/index.html?meta=7&custom_font={%221%22:{%22family%22:%22sfMono-regular%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/SFMono-Regular_1615161502680%22},%222%22:{%22family%22:%22sfMono-bold%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/SFMono-Bold_1615161497267%22},%223%22:{%22family%22:%22AllianceNo%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/AllianceNo.2-Light_1615175288472%22}}
