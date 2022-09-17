@@ -95,10 +95,19 @@ function getCaptchaInfo() {
 		const responseJson = await response.json();
 		lastResponseValue = responseJson;
 		console.log(responseJson);
+		
 		let nestedIframe = document.getElementById("CaptchaFrame")
-		challengeId = responseJson.challengeID;
-		nestedIframe.setAttribute("Haketilo-challengeId", challengeId);
-		nestedIframe.src = "https://api.funcaptcha.com/fc/assets/tile-game-ui/13.33.0/standard/index.html?meta=7&custom_font={%221%22:{%22family%22:%22sfMono-regular%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/SFMono-Regular_1615161502680%22},%222%22:{%22family%22:%22sfMono-bold%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/SFMono-Bold_1615161497267%22},%223%22:{%22family%22:%22AllianceNo%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/AllianceNo.2-Light_1615175288472%22}}";
+		if (nestedIframe) {
+			/* Don't do this anyway currently, as non-audio CAPTCHAs aren't
+				solveable with this program yet.
+			challengeId = responseJson.challengeID;
+			nestedIframe.setAttribute("Haketilo-challengeId", challengeId);
+			nestedIframe.src = "https://api.funcaptcha.com/fc/assets/tile-game-ui/13.33.0/standard/index.html?meta=7&custom_font={%221%22:{%22family%22:%22sfMono-regular%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/SFMono-Regular_1615161502680%22},%222%22:{%22family%22:%22sfMono-bold%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/SFMono-Bold_1615161497267%22},%223%22:{%22family%22:%22AllianceNo%22,%22formats%22:[%22woff%22],%22filePath%22:%22/assets/graphics/github/AllianceNo.2-Light_1615175288472%22}}";
+			*/
+		} else {
+			console.log("CaptchaFrame does not exist."); // Why does this happen sometimes?
+		}
+		
 		// audio CAPTCHA
 		let audioElement = document.createElement("audio");
 		audioElement.id = "audioElement";

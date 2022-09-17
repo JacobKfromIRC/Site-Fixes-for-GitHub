@@ -53,7 +53,7 @@
 	"identifier":   "api-funcaptcha-com-fix",
 	"long_name":    "Libre client for Funcaptcha API",
 	"uuid":         "6c519f23-4df1-4dd7-a84b-774d817dea56",
-	"version":      [2022, 9, 12],
+	"version":      [2022, 9, 17],
 	"revision":     1,
 	"description":  "Enable solving Funcaptcha CAPTCHAs without relying on site-served JavaScript.",
 	"dependencies": [],
