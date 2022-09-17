@@ -21,7 +21,7 @@
 	"identifier":   "github-com-fix-signup",
 	"long_name":    "Signup fix for GitHub",
 	"uuid":         "64eca0ab-91e3-4832-a1cb-1d86dc2df37a",
-	"version":      [2022, 9, 12],
+	"version":      [2022, 9, 16],
 	"revision":     1,
 	"description":  "Enable signing up for GitHub without relying on site-served JavaScript.",
 	"dependencies": [],

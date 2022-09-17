@@ -187,6 +187,7 @@ function submitForm() {
 // add button to submit the form
 let submissionButton = document.createElement("button");
 submissionButton.innerText = "Submit form";
+submissionButton.addEventListener("click", submitForm);
 document.querySelector("div.signup-content-container").appendChild(submissionButton);
 
 /* This frame already exists; we don't need to create it.
