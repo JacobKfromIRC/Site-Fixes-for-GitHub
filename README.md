@@ -3,7 +3,34 @@ This repository contains free software JavaScript to use GitHub, including regis
 
 Warning: GitHub will be able to tell that you used these scripts and not the official ones!
 
-# Instructions
+Current features:
+
+* register an account
+* view lazily loaded <include-fragement-element\> elements
+
+Currently, there are some features missing:
+
+* For registration:
+* * Visual CAPTCHA is not supported.
+* * Some values that do not seem to affect functionality are missing, such as "bda" and "bio", which means it would be trivial for GitHub to figure out who is not using the official scripts (There are probably lots of non-obvious differences too, though).
+* * There is no GUI option to validate email, password, and username before submitting the form.
+* When creating a repository, the license selected does not display properly.
+* The dropdown that appears when you click on your profile icon does not display properly.
+* Previewing issue comments does not work.
+* There is no button to sign out. You can currently sign out by going to https://github.com/logout
+* You cannot attach files in GitHub issues.
+* You cannot hover over react emojis to see who made the reaction.
+* You cannot see lazily loaded <batch-deferred-content\> elements.
+
+
+
+There is also a known issue that I am not planning to fix:
+
+* If you try to register with [HTTPS Everywhere](https://www.eff.org/https-everywhere)'s "Encrypt All Sites Eligible (EASE) Mode", then you will get an error, "The connection to a verification server was interrupted. Please refresh this page to try again."", when trying to register. Abrowser/Firefox's native "HTTPS-Only Mode" does not cause this problem.
+
+### Instructions
+
+The below instructions are outdated. The program should now be intuitive to use via the GUI once installed via Haketilo.
 
 To use this script from the dev console (no Haketilo needed, probably), go to github.com/signup, and copy/paste the code in github-signup.js in the console, and run it.
 
@@ -31,7 +58,7 @@ After entering the launch code, you can click "Skip Personalization" to get to y
 
 You now have a GitHub account! Most functions work without JavaScript, but the profile dropdown is broken. To get to settings you can go to github.com/settings.
 
-# License
+## License
 
 This program is licensed as GPL version 3 or later, with 2 (optional) exceptions. See the following license header for details:
 
