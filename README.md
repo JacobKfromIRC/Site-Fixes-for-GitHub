@@ -11,9 +11,9 @@ Current features:
 Currently, there are some features missing:
 
 * For registration:
-* * Visual CAPTCHA is not supported.
-* * Some values that do not seem to affect functionality are missing, such as "bda" and "bio", which means it would be trivial for GitHub to figure out who is not using the official scripts (There are probably lots of non-obvious differences too, though).
-* * There is no GUI option to validate email, password, and username before submitting the form.
+	* Visual CAPTCHA is not supported.
+	* Some values that do not seem to affect functionality are missing, such as "bda" and "bio", which means it would be trivial for GitHub to figure out who is not using the official scripts (There are probably lots of non-obvious differences too, though).
+	* There is no GUI option to validate email, password, and username before submitting the form.
 * When creating a repository, the license selected does not display properly.
 * The dropdown that appears when you click on your profile icon does not display properly.
 * Previewing issue comments does not work.
