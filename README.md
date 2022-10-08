@@ -14,6 +14,7 @@ Currently, there are some features missing:
 	* Visual CAPTCHA is not supported.
 	* Some values that do not seem to affect functionality are missing, such as "bda" and "bio", which means it would be trivial for GitHub to figure out who is not using the official scripts (There are probably lots of non-obvious differences too, though).
 	* There is no GUI option to validate email, password, and username before submitting the form.
+	* The personalization menu after entering the launch code does not function properly.
 * When creating a repository, the license selected does not display properly.
 * The dropdown that appears when you click on your profile icon does not display properly.
 * Previewing issue comments does not work.
@@ -21,6 +22,7 @@ Currently, there are some features missing:
 * You cannot attach files in GitHub issues.
 * You cannot hover over react emojis to see who made the reaction.
 * You cannot see lazily loaded <batch-deferred-content\> elements.
+* The dynamically loaded parts of the home page (i.e. https://github.com/ when logged in) do not load.
 
 
 
