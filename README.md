@@ -26,7 +26,7 @@ Currently, there are some features missing:
 
 There is also a known issue that I am not planning to fix:
 
-* If you try to register with [HTTPS Everywhere](https://www.eff.org/https-everywhere)'s "Encrypt All Sites Eligible (EASE) Mode", then you will get an error, "The connection to a verification server was interrupted. Please refresh this page to try again."", when trying to register. Abrowser/Firefox's native "HTTPS-Only Mode" does not cause this problem.
+* If you try to register with [HTTPS Everywhere](https://www.eff.org/https-everywhere)'s "Encrypt All Sites Eligible (EASE) Mode", then you will get an error, "The connection to a verification server was interrupted. Please refresh this page to try again.", when trying to register. Abrowser/Firefox's native "HTTPS-Only Mode" does not cause this problem.
 
 ### Instructions
 
