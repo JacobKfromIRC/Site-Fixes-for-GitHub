@@ -174,8 +174,11 @@ function solveAudioCaptcha(solution) {
 			alert("CAPTCHA solved successfully!");
 		} else if (responseJson.error_reply) {
 			alert(`CAPTCHA failed, with error reply: ${responseJson.error_reply}`);
+			if (responseJson.response == "incorrect") {
+				incrementAudioGameNum();
+			}
 		} else {
-			alert("CAPTCHA failed, not sure why!");
+			alert("CAPTCHA failed, not sure why! Consider refreshing the page.");
 		}
 	});
 }
@@ -184,7 +187,11 @@ function playAudio() {
 	document.getElementById("audioElement").play();
 }
 
-
+let audioGameNum = 0;
+function incrementAudioGameNum() {
+	audioGameNum++;
+	document.getElementById("audioElement").src = `https://api.funcaptcha.com/fc/get_audio/?session_token=${token}&analytics_tier=40&r=us-east-1&game=${audioGameNum}&language=en`;
+}
 
 
 // actually run the script
