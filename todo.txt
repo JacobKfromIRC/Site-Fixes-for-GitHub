@@ -1,0 +1,1 @@
+* support signing in with GitHub, for example at gitter.im
