@@ -40,8 +40,9 @@ github-signup
 https://github.com/signup
 */
 
-
 // WARNING: GitHub will definitely be able to tell that you are using this script!
+
+// warning: Some of the functions in this script, not called by the GUI, set innerHTML values directly. I do not know if this is dangerous.
 
 // example URL: https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home
 
