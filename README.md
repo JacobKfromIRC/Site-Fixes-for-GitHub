@@ -1,6 +1,10 @@
 # Site-Fixes-for-GitHub
 This repository contains free software JavaScript to use GitHub, including registration.
 
+The original repository is at https://github.com/JacobKfromIRC/Site-Fixes-for-GitHub but there is a mirror at https://codeberg.org/JacobK/Site-Fixes-for-GitHub
+
+You can use either this repository or the mirror to open issues.
+
 Warning: GitHub will be able to tell that you used these scripts and not the official ones!
 
 Current features:
