@@ -12,7 +12,10 @@
 	update to the latest version of this library. */
 
 /* Modified by Jacob K in 2022 to remove the "export default" keywords so the
-	script can work in Haketilo. */
+	script can work in Haketilo. Modified again by Jacob K in 2024 to set the 
+	X-Requested-With header to XMLHttpRequest, to fix pages like
+	<https://github.com/JacobKfromIRC/>, which have include-fragments that only
+	show the proper output with that header. */
 
 const privateData = new WeakMap()
 
@@ -123,7 +126,8 @@ function isWildcard(accept) {
       method: 'GET',
       credentials: 'same-origin',
       headers: {
-        Accept: this.accept || 'text/html'
+        Accept: this.accept || 'text/html',
+        'X-Requested-With': 'XMLHttpRequest'
       }
     })
   }
