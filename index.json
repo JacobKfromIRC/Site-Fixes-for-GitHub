@@ -78,6 +78,21 @@
 		"identifier": "github-com-fixes-general"
 	    }
 	}
+    }, {
+	"type":         "mapping_and_resource",
+	"identifier":   "github-com-fixes-settings",
+	"long_name":    "GitHub settings page fix",
+	"uuid":         "b134109f-c1c7-4009-9593-76c56f9ec84e",
+	"version":      [2024, 9, 16],
+	"revision":     1,
+	"description":  "Show more options in GitHub settings.",
+	"dependencies": [],
+	"scripts":      [{"file": "github-com-settings.js"}],
+	"payloads": {
+	    "https://github.com/settings/***": {
+		"identifier": "github-com-fixes-settings"
+	    }
+	}
     }],
     "reuse_generate_spdx_report": true
 }
