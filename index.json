@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: CC0-1.0
 
 // Copyright (C) 2022 Wojtek Kosior <koszko@koszko.org>
-// Copyright (C) 2022 Jacob K
+// Copyright (C) 2022,2024 Jacob K
 // Available under the terms of Creative Commons Zero v1.0 Universal.
 
 {
@@ -68,7 +68,7 @@
 	"identifier":   "github-com-fixes-general",
 	"long_name":    "lazy loading fix for GitHub",
 	"uuid":         "d0a3dbfa-ad7f-4cf9-b969-f14f8e6fe2d3",
-	"version":      [2023, 8, 22, 2],
+	"version":      [2024, 9, 16],
 	"revision":     1,
 	"description":  "Show (some) lazy loaded elements on GitHub.",
 	"dependencies": [],
