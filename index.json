@@ -68,11 +68,11 @@
 	"identifier":   "github-com-fixes-general",
 	"long_name":    "lazy loading fix for GitHub",
 	"uuid":         "d0a3dbfa-ad7f-4cf9-b969-f14f8e6fe2d3",
-	"version":      [2024, 9, 16, 2],
+	"version":      [2024, 9, 16, 4],
 	"revision":     1,
 	"description":  "Show (some) lazy loaded elements on GitHub.",
 	"dependencies": [],
-	"scripts":      [{"file": "include-fragment-element.js"}],
+	"scripts":      [{"file": "include-fragment-element.js"}, {"file": "github-project-page.js"}],
 	"payloads": {
 	    "https://github.com/***": {
 		"identifier": "github-com-fixes-general"
