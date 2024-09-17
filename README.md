@@ -1,3 +1,10 @@
+<!--
+For this README file:
+SPDX-FileCopyrightText: 2022-2024 Jacob K
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 # Site-Fixes-for-GitHub
 This repository contains free software JavaScript to use GitHub, including registration.
 
@@ -36,33 +43,23 @@ There is also a known issue that I am not planning to fix:
 
 ### Instructions
 
-The below instructions are outdated. The program should now be intuitive to use via the GUI once installed via Haketilo.
+Although it is possible to run these scripts by pasting them in the console when JavaScript is blocked by some other extension, you will probably want to use them with [Haketilo](https://haketilo.koszko.org/). If you do not have hydrilla set up, here is what I recommend, run from the root of this repository (You will need [guix](https://guix.gnu.org/) installed; it is available in the Trisquel 11 apt repository):
 
-To use this script from the dev console (no Haketilo needed, probably), go to github.com/signup, and copy/paste the code in github-signup.js in the console, and run it.
+```
+cd ..
+git clone --recurse-submodules https://git.koszko.org/haketilo-hydrilla/
+cd haketilo-hydrilla
+git checkout 334801b3d0fa2494a39b46257bec0972116ce5a6 # latest at time of writing
+make shell-with-haketilo
+cd ../Site-Fixes-for-GitHub
+./host.sh
+```
 
-You can go ahead and enter all your registration details now.
+Then, if http://127.0.0.1:10112/ is a repository in your Haketilo settings, you should be able to add the scripts for GitHub pages. In Haketilo 2 you can do this by navigating to a page that needs scripts, for example https://github.com/divVerent/aaaaxy/releases , and then click on the extension icon, then click on "Search for custom resources", then "Show results" next to the local repository, and then "More..." to get info and then install.
 
-Then, select the execution context to the iframe, by clicking on the dropdown to the right of the typing box in the dev console.
+For hydrilla, I recommend using the master branch rather than a release because hydrilla does not have a stable release yet. If you've never used Haketilo, I recommend using the latest stable version (v2.0.1). It can be downloaded [here](https://haketilo.koszko.org/downloads#webextension). After it's installed, add http://127.0.0.1:10112/ as a repository in the settings, and then search for custom resources on a GitHub page.
 
-Run the code in octocaptcha-frame.js.
-
-Then, set the execution context to the other iframe that starts with "https://api.funcaptcha".
-
-Run the code in funcaptcha-init-frame.js.
-
-Type "playAudio();" to play the audio challenge.
-
-Type "solveAudioCaptcha(NUMBERSHEARD);", replacing "NUMBERSHEARD" with the numbers you heard, and run that.
-
-If you get an alert saying the CAPTCHA was solved, set the execution context back to the top. Otherwise the following instructions will not work and you should restart I guess.
-
-Scroll up in the console (or search) to find "Put this in octocaptcha-token:" and run "setOctocaptchaToken(TOKENSTRING);", replacing TOKENSTRING with the value in the console log.
-
-run "submitForm();" and you should be taken to the launch code page, and you should get an email from GitHub with your launch code. This page works without JavaScript.
-
-After entering the launch code, you can click "Skip Personalization" to get to your home page.
-
-You now have a GitHub account! Most functions work without JavaScript, but the profile dropdown is broken. To get to settings you can go to github.com/settings.
+If you do use Haketilo 3 (currently in beta), then it will automatically let you know when a script is available, but I have not tested this and the way Haketilo 3 works makes using other JavaScript blocking extensions like LibreJS and NoScript somewhat inconvenient. If the only JavaScript you want to run is Haketilo JavaScript, then I might recommend the Haketilo 3 beta.
 
 ## License
 
@@ -73,7 +70,7 @@ This program is licensed as GPL version 3 or later, with 2 (optional) exceptions
  * SPDX-License-Identifier: LicenseRef-GPL-3.0-or-later-WITH-js-exceptions
  *
  * Copyright (C) 2022 Wojtek Kosior
- * Copyright (C) 2022 Jacob K
+ * Copyright (C) 2022-2024 Jacob K
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
