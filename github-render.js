@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2023 Jacob K
+// SPDX-FileCopyrightText: 2023-2024 Jacob K
 //
 // SPDX-License-Identifier: LicenseRef-GPL-3.0-or-later-WITH-js-exceptions
 
@@ -8,17 +8,17 @@ https://github.com/iv-org/invidious/tree/master/scripts
 https://github.com/JacobKfromIRC/Site-Fixes-for-GitHub/blob/main/cors-bypass.js
 */
 
-// assumes there's only one script with this kind of info
-function getReactAppEmbeddedData() {
+function getReactData(target) {
+	const dataArr = [];
 	for (script of document.scripts) {
-	  if (script.getAttribute("data-target") == "react-app.embeddedData") {
-		return JSON.parse(script.textContent);
+	  if (script.getAttribute("data-target") == target) {
+		dataArr.push(JSON.parse(script.textContent));
 	  }
 	}
-	return null;
+	return dataArr;
 }
 
-const embeddedData = getReactAppEmbeddedData();
+const embeddedData = getReactData("react-app.embeddedData")[0];
 const reactApp = document.querySelector("react-app"); // should really use querySelectorAll here and render all reactApps
 
 function getLinkFromPath(path) {
